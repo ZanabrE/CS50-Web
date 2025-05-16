@@ -7,9 +7,13 @@
 #    print(i)
 
 # For loop with a list of names
-names = ["Harry", "Ron", "Hermione"]
+#names = ["Harry", "Ron", "Hermione"]
 
 # Printing the list of names.
-for name in names:
-    print(name)
+#for name in names:
+#    print(name)
     
+# Printing the character of a name
+name = "Harry"
+for character in name:
+    print(character)
