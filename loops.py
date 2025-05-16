@@ -3,7 +3,13 @@
 #    print(i)
     
 # Range loop
-for i in range(6):
-    print(i)
+#for i in range(6):
+#    print(i)
+
+# For loop with a list of names
+names = ["Harry", "Ron", "Hermione"]
+
+# Printing the list of names.
+for name in names:
+    print(name)
     
-# While loop
