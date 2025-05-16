@@ -15,3 +15,6 @@ names.remove("Bob")
 
 # Printing the list
 print(names)
+
+# Printing the length of the list
+print(len(names))
