@@ -1,4 +1,4 @@
-# Call a functions from another file 
+# Call a function from file that will be use "functions"  
 # that needs to be imported.
 from functions import square
 
