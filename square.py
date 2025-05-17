@@ -1,5 +1,5 @@
 # Call a functions from another file 
-# it needs to be imported.
+# that needs to be imported.
 from functions import square
 
 for i in range(10):
