@@ -5,8 +5,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, "hello/index.html")
 
-def brian(request):
-    return HttpResponse("Hello, World!")
+def ernesto(request):
+    return HttpResponse("Hello, Ernesto!")
 
 def greet(request):
     return render(request, "Hello/greet.html", {
