@@ -9,12 +9,9 @@ def brian(request):
     return HttpResponse("Hello, World!")
 
 def greet(request):
-    return HttpResponse("Hello, Ernesto!")
+    return render(request, "Hello/greet.html", {
+        "name": name.capitalize()
+    })
 
 def saludos(request):
     return HttpResponse("Saludos, Ernesto!")
-
-def desconocido(request, name):
-    return render(request, "Hola/desconocido.html", {
-        "name": name.capitalize()
-    })
