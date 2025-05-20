@@ -15,4 +15,6 @@ def saludos(request):
     return HttpResponse("Saludos, Ernesto!")
 
 def desconocido(request, name):
-    return HttpResponse(f"Hola, {name.capitalize()}!")
+    return render(request, "Hola/desconocido.html", {
+        "name": name.capitalize()
+    })
