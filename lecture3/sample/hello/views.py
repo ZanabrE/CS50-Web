@@ -8,10 +8,10 @@ def index(request):
 def ernesto(request):
     return HttpResponse("Hello, Ernesto!")
 
+def saludos(request):
+    return HttpResponse("Saludos, Ernesto!")
+
 def greet(request):
     return render(request, "Hello/greet.html", {
         "name": name.capitalize()
     })
-
-def saludos(request):
-    return HttpResponse("Saludos, Ernesto!")
