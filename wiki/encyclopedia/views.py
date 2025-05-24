@@ -70,4 +70,5 @@ def new_page(request):
                 "content": html_page
             })
             
-            
+def edit(request):
+    return
