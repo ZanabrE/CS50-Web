@@ -41,4 +41,15 @@ def search(request):
                 "entry_search": entry_search,
                 "content": html_page
             })
+        else:
+            allEntries = util.list_entries()
+            extensions = []
+            for entry in allEntries:
+                if entry_search.lower() in entry.lower():
+                    extensions.append(entry)
+            return render(request, "encyclopedia/search.html", {
+                "extensions": extensions
+            })
+
+
             
