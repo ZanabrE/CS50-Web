@@ -23,6 +23,8 @@ def index(request):
 def entry(request, title):
     html_page = convert_md_to_html(title)
     if html_page == None:
-        return render(request, "encyclopedia/error.html")
+        return render(request, "encyclopedia/error.html", {
+            "message": "It seems that there was a mistake."
+        })
     else:
         return render(request, "encyclopedia/entry.html")
