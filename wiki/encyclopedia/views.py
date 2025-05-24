@@ -27,4 +27,7 @@ def entry(request, title):
             "message": "It seems that there was a mistake."
         })
     else:
-        return render(request, "encyclopedia/entry.html")
+        return render(request, "encyclopedia/entry.html", {
+            "title": title,
+            "content": html_page
+        })
