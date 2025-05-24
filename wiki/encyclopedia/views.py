@@ -51,5 +51,9 @@ def search(request):
                 "extensions": extensions
             })
 
-
+def new_page(request):
+    if request.method == "GET":
+        return render(request, "encyclopedia/new.html")
+    
+    
             
