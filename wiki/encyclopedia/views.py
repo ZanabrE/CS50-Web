@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from markdown2 import Markdown
+import markdown
 
 from . import util
 
@@ -19,8 +21,8 @@ def index(request):
     })
 
 def entry(request, title):
-    content = convert_md_to_html(title)
-    if content == None:
+    html_page = convert_md_to_html(title)
+    if html_page == None:
         return render(request, "encyclopedia/error.html")
     else:
         return render(request, "encyclopedia/entry.html")
