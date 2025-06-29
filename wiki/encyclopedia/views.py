@@ -39,7 +39,7 @@ def search(request):
         html_page = convert_md_to_html(entry_search)
         if html_page is not None:
             return render(request, "encyclopedia/entry.html", {
-                "entry_search": entry_search,
+                "title": entry_search,
                 "content": html_page
             })
         else:
