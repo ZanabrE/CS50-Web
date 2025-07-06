@@ -1,3 +1,4 @@
+-- SQLBook: Code
 -- Create flights table
 CREATE TABLE flights (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
