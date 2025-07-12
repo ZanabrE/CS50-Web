@@ -15,4 +15,3 @@ INSERT INTO flights (origin, destination, duration) VALUES
 ('Miami', 'New York', '2h 45m'),
 ('New York', 'Miami', '3h 20m'),
 ('Los Angeles', 'New York', '6h 30m');
-
