@@ -1,17 +1,12 @@
 -- SQLBook: Code
--- Create flights table
 CREATE TABLE flights (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-origin TEXT NOT NULL,
-destination TEXT NOT NULL,
-duration TEXT NOT NULL
+    flight_id INT PRIMARY KEY,
+    flight_number VARCHAR(10) NOT NULL,
+    departure_time DATETIME NOT NULL,
+    arrival_time DATETIME NOT NULL,
+    origin VARCHAR(100) NOT NULL,
+    destination VARCHAR(100) NOT NULL,
+    airline VARCHAR(50) NOT NULL
 );
 
--- Insert into tables
-INSERT INTO flights (origin, destination, duration) VALUES
-('New York', 'Los Angeles', '6h 15m'),
-('Los Angeles', 'Chicago', '4h 10m'),
-('Chicago', 'Miami', '3h 30m'),
-('Miami', 'New York', '2h 45m'),
-('New York', 'Miami', '3h 20m'),
-('Los Angeles', 'New York', '6h 30m');
+
