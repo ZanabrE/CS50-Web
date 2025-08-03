@@ -5,6 +5,9 @@ from django.db import models
 class User(AbstractUser):
     pass
 
+class Category(models.Model):
+    name = models.CharField(max_length=64)
+    
 class Auction(models.Model):
     title = models.CharField(max_length=64)
     description = models.TextField()
@@ -14,6 +17,3 @@ class Auction(models.Model):
     owner = models.ForeignKey("User", on_delete=models.CASCADE, blank=True, null=True, related_name="user")
     category = models.ForeignKey("Category", on_delete=models.CASCADE, blank=True, null=True, related_name="category")
 
-
-class Category(models.Model):
-    name = models.CharField(max_length=64)
